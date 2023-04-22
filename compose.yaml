@@ -1,13 +1,24 @@
 services:
-   stocktransferservice:
-      image: "stocktransferservice"
+   inventaryentryandexitservice:
+      image: "inventaryentryandexitservice"
       ports:
-         - "22101:22101"
-      container_name: stocktransferservice
-      hostname: stocktransferservice
+         - "22100:22100"
+      container_name: inventaryentryandexitservice
+      hostname: inventaryentryandexitservice
       stdin_open: true
       tty: true
       networks:
          - safra-docker-network
+   services:
+      stocktransferservice:
+         image: "stocktransferservice"
+         ports:
+            - "22101:22101"
+         container_name: stocktransferservice
+         hostname: stocktransferservice
+         stdin_open: true
+         tty: true
+         networks:
+            - safra-docker-network
 networks:
    safra-docker-network: {}
