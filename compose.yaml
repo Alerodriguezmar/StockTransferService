@@ -7,5 +7,7 @@ services:
       hostname: stocktransferservice
       stdin_open: true
       tty: true
-
-
+      networks:
+         - safra-docker-network
+networks:
+   safra-docker-network: {}
