@@ -15,6 +15,7 @@
 	<description>StockTransferService</description>
 	<properties>
 		<java.version>17</java.version>
+		<spring-boot-admin.version>2.7.4</spring-boot-admin.version>
 	</properties>
 	<dependencies>
 
