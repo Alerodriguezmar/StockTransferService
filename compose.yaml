@@ -1,0 +1,11 @@
+services:
+   stocktransferservice:
+      image: "stocktransferservice"
+      ports:
+         - "22101:22101"
+      container_name: stocktransferservice
+      hostname: stocktransferservice
+      stdin_open: true
+      tty: true
+
+
